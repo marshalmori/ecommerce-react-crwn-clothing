@@ -2,13 +2,13 @@ import { useState, useContext } from "react";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 
-import { UserContext } from "../../contexts/user.context";
-
 import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
+
+import { UserContext } from "../../contexts/user.context";
 
 import "./sign-in-form.styles.scss";
 
@@ -40,7 +40,6 @@ const SignInForm = () => {
         email,
         password
       );
-
       setCurrentUser(user);
       resetFormFields();
     } catch (error) {
