@@ -17,7 +17,7 @@ const Navigation = () => {
           <img src={CrwnLogo} alt="Crwn Logo" className="" />
         </Link>
         <div className="nav-links-container">
-          <Link className="nav-link" to="#">
+          <Link className="nav-link" to="/shop">
             SHOP
           </Link>
 
